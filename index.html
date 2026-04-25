@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космічні запуски</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./assets/js/main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <p class="hero__label">
+                <a href="https://thespacedevs.com/llapi" target="_blank" style="color: inherit; text-decoration: none; border-bottom: 1px dashed currentColor;">Space Launch Now API</a>
+            </p>
+            <h1>Пошук космічних запусків</h1>
+            <p class="hero__text">Відстежуйте майбутні місії провідних космічних агентств та приватних компаній по всьому світу в реальному часі.</p>
+        </header>
+
+        <main class="section">
+            <div class="layout">
+                
+                <div class="panel">
+                    <h2>Фільтр місій</h2>
+                    <p class="panel__text">Оберіть компанію для пошуку найближчого старту.</p>
+
+                    <label class="field">
+                        <span>Космічна компанія / Агентство</span>
+                        <select id="provider-select">
+                            <option value="">Усі запуски</option>
+                            <option value="SpaceX">SpaceX (США)</option>
+                            <option value="NASA">NASA (США)</option>
+                            <option value="ESA">ESA (Європа)</option>
+                            <option value="JAXA">JAXA (Японія)</option>
+                            <option value="Blue Origin">Blue Origin (США)</option>
+                            <option value="Rocket Lab">Rocket Lab</option>
+                            <option value="ULA">ULA</option>
+                        </select>
+                    </label>
+
+                    <div class="actions">
+                        <button id="btn" class="btn">Показати запуск</button>
+                    </div>
+                    <p id="status-text" class="status">Готово до пошуку.</p>
+                </div>
+
+                <div class="panel panel--preview">
+                    <div id="image-container" class="image-box">
+                        <span class="placeholder-text">Тут з'явиться фото ракети</span>
+                    </div>
+                    <h2 id="launch-title" style="font-size: 24px; margin-top: 20px;">Назва місії</h2>
+                    <div id="launch-details" class="panel__text">
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>
