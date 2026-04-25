@@ -1,4 +1,4 @@
-import type { LaunchResponse } from './types'; 
+import type { LaunchResponse } from './types.js'; 
 
 export async function fetchLaunchData(provider: string): Promise<LaunchResponse> {
     let url = 'https://lldev.thespacedevs.com/2.2.0/launch/upcoming/?limit=1';

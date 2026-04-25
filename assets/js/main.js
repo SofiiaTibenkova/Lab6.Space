@@ -1,4 +1,4 @@
-import { fetchLaunchData } from './api';
+import { fetchLaunchData } from './api.js';
 const btn = document.getElementById('btn');
 const statusText = document.getElementById('status-text');
 const providerSelect = document.getElementById('provider-select');

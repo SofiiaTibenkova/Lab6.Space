@@ -1,5 +1,5 @@
-import { fetchLaunchData } from './api';      
-import type { Launch } from './types';      
+import { fetchLaunchData } from './api.js'; 
+import type { Launch } from './types.js';    
 
 const btn = document.getElementById('btn') as HTMLButtonElement | null;
 const statusText = document.getElementById('status-text') as HTMLParagraphElement | null;
